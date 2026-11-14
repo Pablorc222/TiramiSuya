@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TiramiSuya · Tiramisú artesanal en Los Remedios, Sevilla</title>
+<meta name="description" content="Tiramisú artesanal recién hecho, postres y café italiano en Los Remedios, Sevilla. Clásico, lotus, pistacho, limón y caramelo salado. Encarga para recoger por WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Bakery","name":"TiramiSuya","description":"Tiramisú artesanal, postres y café italiano en Sevilla","servesCuisine":"Italiana","address":{"@type":"PostalAddress","streetAddress":"Calle Pedro Pérez Fernández, 29","addressLocality":"Sevilla","addressCountry":"ES"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"14:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"17:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"14:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"12:00","closes":"19:00"}],"sameAs":["https://www.instagram.com/tirami.suya/"]}</script>
+<style>
+:root{--bg:#fbf6ee;--bg2:#f2e8d9;--card:#fffdf8;--ink:#2e1f17;--muted:#7a655a;--brand:#4a2e20;--pist:#7d9a5e;--caramel:#c98a43;--line:#e8dac6;--on-brand:#fff8ee;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17100c;--bg2:#21170f;--card:#281c14;--ink:#f6eadc;--muted:#c0aa97;--brand:#ecd5b8;--pist:#a3bf84;--caramel:#e0a35a;--line:#3a2a1e;--on-brand:#241509;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#17100c;--bg2:#21170f;--card:#281c14;--ink:#f6eadc;--muted:#c0aa97;--brand:#ecd5b8;--pist:#a3bf84;--caramel:#e0a35a;--line:#3a2a1e;--on-brand:#241509;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Jost",system-ui,sans-serif;font-size:17px;line-height:1.7}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif;line-height:1.12;margin:0;font-weight:700}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{font-family:"Playfair Display",serif;font-style:italic;font-size:26px;text-decoration:none;color:var(--brand)}
+.brand b{color:var(--caramel)}
+.links{display:flex;gap:24px;align-items:center;font-size:15px;font-weight:500}
+.links a{text-decoration:none;color:var(--muted)}
+.links a:hover{color:var(--caramel)}
+.btn{display:inline-block;padding:14px 30px;background:var(--brand);color:var(--on-brand);text-decoration:none;font-weight:600;border-radius:999px;border:2px solid var(--brand);transition:.25s;cursor:pointer;font:inherit;font-weight:600}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 24px -14px var(--brand)}
+.btn.line{background:transparent;color:var(--brand)}
+.links .btn{padding:8px 20px;font-size:15px;color:var(--on-brand)}
+.hero{padding:84px 0 96px;background:radial-gradient(760px 440px at 90% 0,color-mix(in srgb,var(--pist) 28%,transparent),transparent 70%),radial-gradient(560px 320px at 0 100%,var(--bg2),transparent 70%)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:54px;align-items:center}
+.kicker{color:var(--pist);font-weight:600;letter-spacing:.2em;text-transform:uppercase;font-size:13px;margin-bottom:18px}
+.hero h1{font-size:clamp(44px,7vw,82px);color:var(--brand);margin-bottom:20px}
+.hero h1 em{color:var(--caramel);font-weight:500}
+.hero p{color:var(--muted);font-size:19px;max-width:500px;margin:0 0 32px}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.cake{width:min(340px,80%);margin:0 auto;filter:drop-shadow(0 34px 28px rgba(60,30,10,.25))}
+.cake div{height:46px;border-radius:6px}
+.cake .top{height:58px;border-radius:30px 30px 6px 6px;background:repeating-radial-gradient(circle at 20% 40%,#6a4026 0 2px,#4a2b19 2px 5px)}
+.cake .l1{background:#f5e3c2}.cake .l2{background:#7b4b2e}.cake .l3{background:#f5e3c2}.cake .l4{background:#7b4b2e;border-radius:6px 6px 22px 22px}
+.cup{text-align:center;font-size:13px;color:var(--muted);margin-top:18px;letter-spacing:.1em}
+.strip{background:var(--brand);color:var(--on-brand)}
+.strip .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px 26px;padding-top:18px;padding-bottom:18px;font-size:13px;letter-spacing:.16em;text-transform:uppercase}
+section{padding:90px 0}
+.eyebrow{color:var(--caramel);font-weight:600;letter-spacing:.22em;text-transform:uppercase;font-size:13px;margin-bottom:12px}
+h2{font-size:clamp(32px,4.6vw,54px);color:var(--brand);margin-bottom:16px}
+.lead{color:var(--muted);max-width:620px;margin:0 0 44px}
+.alt{background:var(--bg2);border-block:1px solid var(--line)}
+.flav{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.fl{background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;text-align:center;transition:.25s}
+.fl:hover{transform:translateY(-5px)}
+.fl .sw{height:96px}
+.fl h3{font-size:21px;margin:14px 8px 4px;color:var(--brand)}
+.fl p{margin:0 12px 18px;font-size:14px;color:var(--muted)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.order{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:30px;box-shadow:0 30px 50px -40px rgba(60,30,10,.5)}
+.row{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px dashed var(--line)}
+.q{display:flex;align-items:center;gap:12px}
+.q button{width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:var(--bg2);color:var(--ink);font-size:20px;cursor:pointer;line-height:1}
+.q span{min-width:20px;text-align:center;font-weight:600}
+.order label{display:block;font-size:13px;color:var(--muted);margin:16px 0 4px;letter-spacing:.06em}
+.order input,.order textarea{width:100%;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit}
+.order .btn{width:100%;margin-top:20px;text-align:center}
+.hint{font-size:13px;color:var(--muted);margin-top:10px}
+.info{display:grid;gap:16px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px 24px}
+.box h3{font-size:22px;color:var(--brand);margin-bottom:6px}
+.box p{margin:0;color:var(--muted);font-size:16px}
+.hours{width:100%;border-collapse:collapse;color:var(--muted);font-size:16px}
+.hours td{padding:5px 0;border-bottom:1px dashed var(--line)}
+.hours td:last-child{text-align:right;color:var(--ink);font-weight:500}
+.moments{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.mo{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:30px 26px}
+.mo i{font-style:normal;font-size:38px}
+.mo h3{font-size:24px;color:var(--brand);margin:8px 0 6px}
+.mo p{margin:0;color:var(--muted);font-size:15px}
+.visit{text-align:center;background:var(--brand);color:var(--on-brand)}
+.visit h2{color:var(--on-brand)}
+.visit .lead{color:var(--on-brand);opacity:.8;margin-inline:auto}
+.visit .btn{background:var(--on-brand);color:var(--brand);border-color:var(--on-brand)}
+.visit .btn.line{background:transparent;color:var(--on-brand)}
+.visit .cta{justify-content:center}
+footer{padding:26px 0;text-align:center;color:var(--muted);font-size:14px}
+@media(max-width:900px){.hero .wrap,.two{grid-template-columns:1fr;gap:38px}.flav{grid-template-columns:repeat(2,1fr)}.moments{grid-template-columns:1fr}.links a:not(.btn){display:none}section{padding:58px 0}.hero{padding:50px 0 60px}.fl:last-child{grid-column:span 2}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+<a class="brand" href="#inicio">Tirami<b>Suya</b></a>
+<div class="links"><a href="#sabores">Sabores</a><a href="#encargos">Encargos</a><a href="#visitanos">Visítanos</a><a class="btn" href="#encargos">Encargar</a></div>
+</div></nav>
+
+<header class="hero" id="inicio"><div class="wrap">
+<div>
+<div class="kicker">Los Remedios · Sevilla</div>
+<h1>Tiramisú <em>artesanal</em>, recién hecho</h1>
+<p>Postres italianos y café de verdad en el corazón de Los Remedios. Elige tu sabor favorito y encarga tu bandeja para recoger.</p>
+<div class="cta"><a class="btn" href="#encargos">Hacer un encargo</a><a class="btn line" href="#sabores">Ver sabores</a></div>
+</div>
+<div>
+<div class="cake" aria-hidden="true"><div class="top"></div><div class="l1"></div><div class="l2"></div><div class="l3"></div><div class="l4"></div></div>
+<div class="cup">☕ TIRAMISÚ · POSTRES · CAFÉ ITALIANO</div>
+</div>
+</div></header>
+
+<div class="strip"><div class="wrap"><span>Artesanal</span><span>Recién hecho</span><span>Café italiano</span><span>Opciones veganas</span></div></div>
+
+<section id="sabores"><div class="wrap">
+<div class="eyebrow">Nuestros sabores</div>
+<h2>Cinco formas de enamorarse</h2>
+<p class="lead">Del clásico de siempre a las versiones más golosas. Pregunta por las variedades del día.</p>
+<div class="flav">
+<div class="fl"><div class="sw" style="background:linear-gradient(180deg,#5a3520,#8a5a38 55%,#f1dcb7)"></div><h3>Clásico</h3><p>Café, mascarpone y cacao.</p></div>
+<div class="fl"><div class="sw" style="background:linear-gradient(180deg,#a85f2a,#d79a55 55%,#f3dfbb)"></div><h3>Lotus</h3><p>Con crema y galleta caramelizada.</p></div>
+<div class="fl"><div class="sw" style="background:linear-gradient(180deg,#6f8c4f,#a4bf7e 55%,#f3ecd0)"></div><h3>Pistacho</h3><p>Cremoso y lleno de sabor.</p></div>
+<div class="fl"><div class="sw" style="background:linear-gradient(180deg,#e9c43b,#f4dc78 55%,#fbf1cd)"></div><h3>Limón</h3><p>Fresco y ligero.</p></div>
+<div class="fl"><div class="sw" style="background:linear-gradient(180deg,#a7662b,#cf9348 55%,#f2deb6)"></div><h3>Caramelo salado</h3><p>Dulce con un toque salado.</p></div>
+</div>
+</div></section>
+
+<section class="alt" id="encargos"><div class="wrap two">
+<div>
+<div class="eyebrow">Encargos</div>
+<h2>Pide tu bandeja en un minuto</h2>
+<p class="lead" style="margin-bottom:20px">Elige tus sabores y envíanos el pedido por WhatsApp. Lo preparamos para que lo recojas en la tienda.</p>
+<div class="info">
+<div class="box"><h3>1. Elige</h3><p>Selecciona sabores y cantidades.</p></div>
+<div class="box"><h3>2. Envía</h3><p>Se abre WhatsApp con tu pedido ya escrito.</p></div>
+<div class="box"><h3>3. Recoge</h3><p>Pasa por la tienda y llévatelo recién hecho.</p></div>
+</div>
+</div>
+<div class="order" id="orderBox">
+<div id="rows"></div>
+<label for="nm">Tu nombre</label><input id="nm" placeholder="Nombre">
+<label for="dt">Día y hora para recoger</label><input id="dt" placeholder="Ej. sábado a las 12:00">
+<label for="nt">Notas (opcional)</label><textarea id="nt" rows="2" placeholder="Alergias, celebración..."></textarea>
+<button class="btn" id="send" type="button">Enviar pedido por WhatsApp</button>
+<div class="hint" id="hint"></div>
+</div>
+</div></section>
+
+<section id="momentos"><div class="wrap">
+<div class="eyebrow">Para cualquier momento</div>
+<h2>Más que tiramisú</h2>
+<div class="moments" style="margin-top:34px">
+<div class="mo"><i>☕</i><h3>Café italiano</h3><p>El acompañante perfecto para tu postre, de mañana o de tarde.</p></div>
+<div class="mo"><i>🥐</i><h3>Croissant vegano</h3><p>Opciones veganas como el croissant de chocolate, para que todos disfruten.</p></div>
+<div class="mo"><i>🎁</i><h3>Bandejas y regalos</h3><p>Perfectos para cumpleaños, reuniones y celebraciones.</p></div>
+</div>
+</div></section>
+
+<section class="alt" id="visitanos"><div class="wrap two">
+<div>
+<div class="eyebrow">Visítanos</div>
+<h2>En Los Remedios, Sevilla</h2>
+<p class="lead" style="margin-bottom:22px">Calle Pedro Pérez Fernández, 29. Te esperamos con el café recién hecho.</p>
+<a class="btn" href="https://www.google.com/maps/search/?api=1&query=Calle+Pedro+P%C3%A9rez+Fern%C3%A1ndez+29+Sevilla" target="_blank" rel="noopener">Cómo llegar</a>
+</div>
+<div class="box"><h3>Horario</h3>
+<table class="hours"><tr><td>Lunes a viernes</td><td>9:00–14:00 · 17:00–20:00</td></tr><tr><td>Sábado</td><td>10:00–14:00</td></tr><tr><td>Domingo</td><td>12:00–19:00</td></tr></table>
+</div>
+</div></section>
+
+<section class="visit"><div class="wrap">
+<div class="eyebrow" style="color:var(--caramel)">Síguenos</div>
+<h2>Cada día, algo dulce</h2>
+<p class="lead">Novedades, sabores y avisos de horario en nuestro Instagram.</p>
+<div class="cta"><a class="btn" href="https://www.instagram.com/tirami.suya/" target="_blank" rel="noopener">@tirami.suya</a><a class="btn line" href="#encargos">Hacer un encargo</a></div>
+</div></section>
+
+<footer><div class="wrap">© 2026 TiramiSuya · Tiramisú artesanal en Sevilla</div></footer>
+
+<script>
+(function(){
+var PHONE="";/* Añade aquí el WhatsApp del negocio con prefijo, ej. 34600000000 */
+var items=["Clásico","Lotus","Pistacho","Limón","Caramelo salado"],qty={};
+var rows=document.getElementById("rows");
+items.forEach(function(n){qty[n]=0;var r=document.createElement("div");r.className="row";
+r.innerHTML='<div>'+n+'</div><div class="q"><button type="button" aria-label="Quitar">−</button><span>0</span><button type="button" aria-label="Añadir">+</button></div>';
+var b=r.querySelectorAll("button"),s=r.querySelector("span");
+b[0].onclick=function(){if(qty[n]>0){qty[n]--;s.textContent=qty[n]}};
+b[1].onclick=function(){qty[n]++;s.textContent=qty[n]};
+rows.appendChild(r)});
+var hint=document.getElementById("hint");
+document.getElementById("send").onclick=function(){
+var l=items.filter(function(n){return qty[n]>0}).map(function(n){return "• "+qty[n]+" x "+n});
+if(!l.length){hint.textContent="Elige al menos un sabor.";return}
+var m="¡Hola TiramiSuya! Me gustaría encargar:\n"+l.join("\n");
+var nm=document.getElementById("nm").value.trim(),dt=document.getElementById("dt").value.trim(),nt=document.getElementById("nt").value.trim();
+if(dt)m+="\nPara recoger: "+dt;if(nm)m+="\nNombre: "+nm;if(nt)m+="\nNotas: "+nt;
+if(PHONE){window.open("https://wa.me/"+PHONE+"?text="+encodeURIComponent(m),"_blank")}
+else{hint.textContent="Demo: aquí se abriría WhatsApp con el pedido ya escrito.";try{navigator.clipboard.writeText(m)}catch(e){}}
+};
+})();
+</script>
+</body>
+</html>
